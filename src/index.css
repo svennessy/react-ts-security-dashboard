@@ -1,0 +1,72 @@
+:root {
+  --bg-base: #0c0f14;
+  --bg-surface: #131820;
+  --bg-elevated: #1a2230;
+  --bg-hover: #222c3d;
+  --border: #2a3548;
+  --border-subtle: #1e2736;
+  --text-primary: #e8edf4;
+  --text-secondary: #8b9bb4;
+  --text-muted: #5c6b82;
+  --accent: #3d8bfd;
+  --accent-dim: #2563c4;
+  --critical: #f04438;
+  --critical-bg: rgba(240, 68, 56, 0.12);
+  --high: #f79009;
+  --high-bg: rgba(247, 144, 9, 0.12);
+  --medium: #eab308;
+  --medium-bg: rgba(234, 179, 8, 0.1);
+  --low: #6b9bd1;
+  --low-bg: rgba(107, 155, 209, 0.1);
+  --success: #12b76a;
+  --success-bg: rgba(18, 183, 106, 0.12);
+  --warning: #f79009;
+  --warning-bg: rgba(247, 144, 9, 0.12);
+  --breached: #f04438;
+  --at-risk: #f79009;
+  --on-track: #12b76a;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+a {
+  color: var(--accent);
+}
